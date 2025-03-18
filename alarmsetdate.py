@@ -23,8 +23,8 @@ def chcktime():
     current_time=datetime.datetime.now().strftime("%H:%M")
     for key,val in days.items():
         if key == todaystr  and val == current_time:
-            winsound.Beep(frequency=freq,duration=duration)
             print("beeping...")
+            winsound.Beep(frequency=freq,duration=duration)
             break
         
 while True:
